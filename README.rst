@@ -1,24 +1,23 @@
 Fn.py: enjoy FP in Python
 =========================
 
-Despite the fact that Python is not pure-functional programming
-language, it's multi-paradigm PL and it gives you enough freedom to take
-credits from functional programming approach. There are theoretical and
-practical advantages to the functional style:
+Python은 순수한 함수형 언어가 아님에도 불구하고 , 
+다중 패러다임 언어이며 우리에게 충분한 자유를 준다.
+함수 스타일의 실질적인 장점은 이렇다:
 
 -  Formal provability
 -  Modularity
 -  Composability
 -  Ease of debugging and testing
 
-``Fn.py`` library provides you with missing "batteries" to get maximum
-from functional approach even in mostly-imperative program.
+``Fn.py`` 라이브러리는 당신에게 "에너지"를 최대로 줄것입니다.
+함수형 접근방법은 당신에게 흥미를 선사할 것 입니다.
 
-More about functional approach from my Pycon UA 2012 talks: `Functional
+더 자세한 자료를 원한다면 나의 Pycon UA 2012 talks을 참고하십시오: `Functional
 Programming with
 Python <http://kachayev.github.com/talks/uapycon2012/index.html>`_.
 
-Scala-style lambdas definition
+Scala같은 람다함수 정의
 ------------------------------
 
 .. code-block:: python
@@ -31,9 +30,9 @@ Scala-style lambdas definition
     assert list(filter(_ < 10, [9,10,11])) == [9]
     assert list(zipwith(_ + _)([0,1,2], repeat(10))) == [10,11,12]
 
-More examples of using ``_`` you can find in `test
+밑줄 ``_``에 관한 더 많은 자료를 보고싶다면,  클릭하세요. `test
 cases <https://github.com/kachayev/fn.py/blob/master/tests.py>`_
-declaration (attributes resolving, method calling, slicing).
+다음의 내용이 있습니다. (attributes resolving, method calling, slicing).
 
 **Attention!** If you work in interactive python shell, your should remember that ``_`` means "latest output" and you'll get unpredictable results. In this case, you can do something like ``from fn import _ as X`` (and then write functions like ``X * 2``).
 
