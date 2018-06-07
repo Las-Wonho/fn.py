@@ -34,9 +34,9 @@ Scala같은 람다함수 정의
 cases <https://github.com/kachayev/fn.py/blob/master/tests.py>`_
 다음의 내용이 있습니다. (attributes resolving, method calling, slicing).
 
-**Attention!** If you work in interactive python shell, your should remember that ``_`` means "latest output" and you'll get unpredictable results. In this case, you can do something like ``from fn import _ as X`` (and then write functions like ``X * 2``).
+**주의!** 만약 Python shell에서 실행하는 경우,  ``_`` 은 가장 최근의 출력을 의미한다는 것을 잊지마세요. 예상치 못한 결과를 불러올 수 있습니다. 이 경우에는,  ``from fn import _ as X`` 와 같은 방법으로 _을 다르게 불러오면 됩니다.(그리고 함수를 다음과 같이 쓰세요. ``X * 2``).
 
-If you are not sure, what your function is going to do, you can print it:
+어떤 함수를 사용하는지 모르는 경우, 당신은 출력할 수 있습니다.:
 
 .. code-block:: python
 
@@ -58,7 +58,7 @@ If you are not sure, what your function is going to do, you can print it:
     fn.underscore.ArityError: (_ + _) expected 2 arguments, got 1
 
 
-Persistent data structures
+변하지 않는 데이터 구조
 --------------------------
 
 **Attention:** Persistent data structures are under active development.
