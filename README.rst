@@ -82,9 +82,9 @@ cases <https://github.com/kachayev/fn.py/blob/master/tests.py>`_
     >>> s3.extract() # <-- s3 isn't changed
     (10, <fn.immutable.heap.SkewHeap object at 0x10b11c052>)
 
-If you think I'm totally crazy and it will work despairingly slow, just give it 5 minutes. Relax, take a deep breath and read about few techniques that make persistent data structures fast and efficient: `structural sharing <http://en.wikipedia.org/wiki/Persistent_data_structure#Examples_of_persistent_data_structures>`_ and `path copying <http://en.wikipedia.org/wiki/Persistent_data_structure#Path_Copying>`_.
+만약 여러분이 제가 완전히 미쳤다고 생각하고 그것이 지속적으로 느리게 작동할 것이라고 생각한다면, 5분만 주세요. 안심하고 심호흡을 하고 영구적인 데이터 구조를 빠르고 효율적으로 만드는 몇가지 기술에 대해 읽어 보십시오: `structural sharing <http://en.wikipedia.org/wiki/Persistent_data_structure#Examples_of_persistent_data_structures>`_ and `path copying <http://en.wikipedia.org/wiki/Persistent_data_structure#Path_Copying>`_.
 
-To see how it works in "pictures", you can check great slides from Zach Allaun's talk (StrangeLoop 2013): `"Functional Vectors, Maps And Sets In Julia" <http://goo.gl/Cp1Qsq>`_.
+사진에서 작동하는 방식을 확인하려면 ZachAllaun의 강연에서 멋진 슬라이드를 확인할 수 있습니다 (StrangeLoop 2013): `"Functional Vectors, Maps And Sets In Julia" <http://goo.gl/Cp1Qsq>`_.
 
 And, if you are brave enough, go and read:
 
