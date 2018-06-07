@@ -86,14 +86,14 @@ cases <https://github.com/kachayev/fn.py/blob/master/tests.py>`_
 
 사진에서 작동하는 방식을 확인하려면 ZachAllaun의 강연에서 멋진 슬라이드를 확인할 수 있습니다 (StrangeLoop 2013): `"Functional Vectors, Maps And Sets In Julia" <http://goo.gl/Cp1Qsq>`_.
 
-And, if you are brave enough, go and read:
+그리고 만약 여러분이 충분히 용감하다면, 이것을 읽으세요:
 
 - Chris Okasaki, "Purely Functional Data Structures" (`Amazon <http://goo.gl/c7ptkk>`_)
 - Fethi Rabhi and Guy Lapalme, "Algorithms: A Functional Programming Approach" (`Amazon <http://goo.gl/00BxTO>`_)
 
-Available immutable data structures in ``fn.immutable`` module:
+변경 불가능한 자료구조는  ``fn.immutable`` 모듈에서 사용가능 합니다.:
 
-- ``LinkedList``: most "obvious" persistent data structure, used as building block for other list-based structures (stack, queue)
+- ``LinkedList``: 가장 "분명한" 자료구조입니다, 다른 리스트같은 자료구조의 기본 뼈대로 사용됩니다 (stack, queue)
 - ``Stack``: wraps linked list implementation with well-known pop/push API
 - ``Queue``: uses two linked lists and lazy copy to provide O(1) enqueue and dequeue operations
 - ``Deque`` (in progress): `"Confluently Persistent Deques via Data
