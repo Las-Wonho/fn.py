@@ -45,7 +45,7 @@ cases <https://github.com/kachayev/fn.py/blob/master/tests.py>`_
     print (_ + 2) # "(x1) => (x1 + 2)"
     print (_ + _ * _) # "(x1, x2, x3) => (x1 + (x2 * x3))"
 
-``_`` will fail with ``ArityError`` (``TypeError`` subclass) on inaccurate number of passed arguments. This is one more restrictions to ensure that you did everything right:
+``_`` 잘못된 통과된 인수의 수에 대해 ``ArityError`` (``TypeError`` subclass) 가 실패합니다. 이는 모든 작업을 올바르게 수행하기 위한 또 하나의 제약 사항입니다.
 
 .. code-block:: python
 
@@ -58,14 +58,14 @@ cases <https://github.com/kachayev/fn.py/blob/master/tests.py>`_
     fn.underscore.ArityError: (_ + _) expected 2 arguments, got 1
 
 
-변하지 않는 데이터 구조
+영구적인 데이터 구조
 --------------------------
 
-**Attention:** Persistent data structures are under active development.
+**주의:** 영구적인 데이터 구조의 개발이 끝나지 않았습니다.
 
-Persistent data structure is a data structure that always preserves the previous version of itself when it is modified (more formal information on `Wikipedia <http://goo.gl/8VveOH>`_). Each operation with such data structure yields a new updated structure instead of in-place modification (all previous versions are potentially available or GC-ed when possible).
+영구 데이터 구조는 데이터가 수정될 때 항상 이전 버전을 보존하는 데이터 구조입니다 (더 공식적인 정보는 `Wikipedia <http://goo.gl/8VveOH>`_). 이러한 데이터 구조를 사용하는 각 작업에서는 인 플레이스 수정 대신 새 업데이트된 구조가 생성됩니다(가능한 경우 모든 이전 버전을 사용할 수 있습니다).
 
-Lets take a quick look:
+간단히 살펴보겠습니다:
 
 .. code-block:: python
 
