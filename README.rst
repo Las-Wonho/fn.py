@@ -30,7 +30,7 @@ Scala같은 람다함수 정의
     assert list(filter(_ < 10, [9,10,11])) == [9]
     assert list(zipwith(_ + _)([0,1,2], repeat(10))) == [10,11,12]
 
-밑줄 ``_``에 관한 더 많은 자료를 보고싶다면,  클릭하세요. `test
+밑줄 ``_`` 에 관한 더 많은 자료를 보고싶다면,  클릭하세요. `test
 cases <https://github.com/kachayev/fn.py/blob/master/tests.py>`_
 다음의 내용이 있습니다. (attributes resolving, method calling, slicing).
 
