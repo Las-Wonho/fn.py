@@ -94,8 +94,8 @@ cases <https://github.com/kachayev/fn.py/blob/master/tests.py>`_
 변경 불가능한 자료구조는  ``fn.immutable`` 모듈에서 사용가능 합니다.:
 
 - ``LinkedList``: 가장 "분명한" 자료구조입니다, 다른 리스트같은 자료구조의 기본 뼈대로 사용됩니다 (stack, queue)
-- ``Stack``: wraps linked list implementation with well-known pop/push API
-- ``Queue``: uses two linked lists and lazy copy to provide O(1) enqueue and dequeue operations
+- ``Stack``: LinkedList로 이루어진 자료구조입니다. 잘 알려진 pop/push를 지원합니다.
+- ``Queue``: 두개의 연결된 리스트를 사용하며 늦은 복사로 O(1)의 enqueue와 dequeue를 지원합니다.
 - ``Deque`` (in progress): `"Confluently Persistent Deques via Data
   Structural Bootstrapping" <http://goo.gl/vVTzx3>`_
 - ``Deque`` based on ``FingerTree`` data structure (see more information below)
