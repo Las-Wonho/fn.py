@@ -80,3 +80,8 @@ History
 -  Full list of ideas on paper
 -  Repository is created
 -  Initial commit
+
+02.06.2018
+----------
+
+- Translate To Korean
