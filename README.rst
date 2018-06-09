@@ -1,4 +1,4 @@
-Fn.py: enjoy FP in Python
+Fn.py: enjoy FP in Python / Translate to Korean
 =========================
 
 Python은 순수한 함수형 언어가 아님에도 불구하고 , 
