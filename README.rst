@@ -99,13 +99,13 @@ cases <https://github.com/kachayev/fn.py/blob/master/tests.py>`_
 - ``Deque`` (in progress): `"Confluently Persistent Deques via Data
   Structural Bootstrapping" <http://goo.gl/vVTzx3>`_
 - ``Deque`` based on ``FingerTree`` data structure (see more information below)
-- ``Vector``: O(log32(n)) access to elements by index (which is near-O(1) for reasonable vector size), implementation is based on ``BitmappedTrie``, almost drop-in replacement for built-in Python ``list``
+- ``Vector``: O(log32(n)) 의 속도로 인덱스에 접근 (벡터 크기에 따른 O(1)의 속도에 근접한다.), 구현은 파이썬의 ``list``를  대체가능한  ``BitmappedTrie``을 기본으로 한다.
 - ``SkewHeap``: self-adjusting heap implemented as a binary tree with specific branching model, uses heap merge as basic operation, more information - `"Self-adjusting heaps" <http://goo.gl/R1PZME>`_
 - ``PairingHeap``: `"The Pairing-Heap: A New Form of Self-Adjusting Heap" <http://goo.gl/aiVtPH>`_
 - ``Dict`` (in progress): persistent hash map implementation based on ``BitmappedTrie``
 - ``FingerTree`` (in progress): `"Finger Trees: A Simple General-purpose Data Structure" <http://goo.gl/Bzo0df>`_
 
-Use appropriate doc strings to get more information about each data structure as well as sample code.
+각 데이터 구조와 샘플 코드에 대한 자세한 내용을 보려면 해당 문서를 사용하십시오.
 
 To get more clear vision of how persistent heaps work (``SkewHeap`` and ``PairingHeap``), you can look at slides from my talk `"Union-based heaps" <http://goo.gl/VMgdG2>`_ (with analyzed data structures definitions in Python and Haskell).
 
